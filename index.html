@@ -12,7 +12,7 @@
 <body>
   	
   	<div class="m-home">
-    		<div class="d-header">
+    		<header class="d-header">
       			<img class="image-7-icon" alt="" src="image 7.png">
       			
       			<div class="menu-toggle" id="menuToggleContainer">
@@ -23,7 +23,9 @@
         				<div class="menu-toggle-child">
         				</div>
       			</div>
-    		</div>
+    		</header>
+
+			<main>
     		<div class="slider">
       			<div class="m-news">
         				<img class="bild-icon" alt="" src="Bild.png">
@@ -78,6 +80,7 @@
         				<div class="click-here">Erfahre mehr</div>
       			</div>
     		</div>
+		</main>
     		<div class="m-footer">
       			<div class="chilley-musterplatz-3-12345-mu-container">
         				<p class="chilley-musterplatz-3-12345-mu">ChillEYMusterplatz 312345 Musterstadt</p>
@@ -113,72 +116,5 @@
     		
   	</div>
   	
-  	
-  	
-  	<script>
-    		var popupnewsText = document.getElementById("popupnewsText");
-    		if(popupnewsText) {
-      			popupnewsText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var popupwhatWeDo = document.getElementById("popupwhatWeDo");
-    		if(popupwhatWeDo) {
-      			popupwhatWeDo.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var popupwhoWeAre = document.getElementById("popupwhoWeAre");
-    		if(popupwhoWeAre) {
-      			popupwhoWeAre.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var popuppartnerText = document.getElementById("popuppartnerText");
-    		if(popuppartnerText) {
-      			popuppartnerText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var popupproductsText = document.getElementById("popupproductsText");
-    		if(popupproductsText) {
-      			popupproductsText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var menuToggleContainer = document.getElementById("menuToggleContainer");
-    		if(menuToggleContainer) {
-      			menuToggleContainer.addEventListener("click", function () {
-        				var popup = document.getElementById("mNavContainer");
-        				if(!popup) return;
-        				var popupStyle = popup.style;
-        				if(popupStyle) {
-          					popupStyle.display = "flex";
-          					popupStyle.zIndex = 100;
-          					popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-          					popupStyle.alignItems = "center";
-          					popupStyle.justifyContent = "center";
-        				}
-        				popup.setAttribute("closable", "");
-        				
-        				var onClick = popup.onClick || function(e) {
-          					if(e.target === popup && popup.hasAttribute("closable")) {
-            						popupStyle.display = "none";
-          					}
-        				};
-        				popup.addEventListener("click", onClick);
-      			});
-    		}
-    		
-    		var buttonContainer = document.getElementById("buttonContainer");
-    		if(buttonContainer) {
-      			buttonContainer.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+  	</body>
 </html>
