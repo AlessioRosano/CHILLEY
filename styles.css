@@ -134,35 +134,115 @@ header {
 
 /* ----------Body----------- */
 
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.m-home {
+    padding: 20px;
+}
+
+/* Slider Styling */
 .slider {
-    display: flex; /* Balken nebeneinander */
-    flex-wrap: nowrap;
-    gap: 15px; /* Abstand zwischen den Balken */
-  }
-  
-  .m-news, .m-news1, .m-news2, .m-news3 {
-    flex: 1; /* Balken teilen sich den verfügbaren Platz */
-    max-width: 25%; /* Jeder Balken ist standardmäßig maximal ein Viertel breit */
-  }
-  
-  /* Mobile-Optimierung */
-  @media (max-width: 768px) { /* Für Geräte mit Breite ≤ 768px */
+    display: flex;
+    flex-wrap: wrap; /* Ermöglicht Zeilenumbruch bei Bedarf */
+    gap: 20px; /* Abstand zwischen den Boxen */
+    justify-content: center;
+}
+
+/* News Box Styling */
+.m-news {
+    flex: 1 1 calc(33.33% - 20px); /* Drei Boxen nebeneinander, mit Abstand */
+    max-width: calc(33.33% - 20px); /* Maximale Breite der Box */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.m-news img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Button Styling */
+.button {
+    margin-top: 10px;
+}
+
+.click-here {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.click-here:hover {
+    background-color: #0056b3;
+}
+
+/* Zitat Styling */
+.m-zitat {
+    margin: 20px 0;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+.irgend-ein-schones {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.die-gruender-von {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Mobile-Optimierung */
+@media (max-width: 768px) { /* Für kleinere Geräte */
     .slider {
-      flex-direction: column; /* Balken untereinander */
-      gap: 20px; /* Größerer Abstand zwischen den Balken */
+        flex-direction: column; /* Boxen untereinander anordnen */
+        gap: 20px; /* Größerer Abstand zwischen den Boxen */
     }
-  
-    .m-news, .m-news1, .m-news2, .m-news3 {
-      max-width: 100%; /* Jeder Balken füllt die gesamte Breite */
+
+    .m-news {
+        max-width: 100%; /* Jede Box nimmt die gesamte Breite ein */
     }
-  
+
     .m-zitat {
-      text-align: center; /* Optional: Zitat mittig ausrichten */
-      padding: 20px; /* Platz um das Zitat erhöhen */
+        padding: 20px; /* Mehr Platz um das Zitat */
     }
-  }
+}
 
+/* Optimierung für größere Tablets (ab 768px) */
+@media (min-width: 768px) {
+    .m-news {
+        flex: 1 1 calc(50% - 20px); /* Zwei Boxen nebeneinander */
+        max-width: calc(50% - 20px);
+    }
+}
 
+/* Optimierung für große Bildschirme (ab 1024px) */
+@media (min-width: 1024px) {
+    .m-news {
+        flex: 1 1 calc(33.33% - 20px); /* Drei Boxen nebeneinander */
+        max-width: calc(33.33% - 20px);
+    }
+}
 
 
 /* ----------Body----------- */
@@ -374,10 +454,11 @@ header {
     position: relative;
     letter-spacing: -0.05em;
     line-height: 100%;
-    text-align: right;
+    text-align: left;
     display: inline-block;
     height: 34px;
     flex-shrink: 0;
+    flex:1
     
 }
 
