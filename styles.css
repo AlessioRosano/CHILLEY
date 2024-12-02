@@ -434,21 +434,18 @@ body, html {
 }
 
 .chilley-musterplatz-3-12345-mu-container {
-    width: 158px;
+    width: 164px;
     position: relative;
-    text-align:center ;
-    letter-spacing: -0.05em;
+    text-align:center;
     line-height: 100%;
     display: inline-block;
-    height: 94px;
-    flex-shrink: 0;
+    height: 80px;
     flex:1
     
 }
 
 .impressum {
     margin: 0;
-    white-space: pre-wrap;
 }
 
 .impressum-datenschutz {
@@ -457,8 +454,7 @@ body, html {
     line-height: 100%;
     text-align: left;
     display: inline-block;
-    height: 34px;
-    flex-shrink: 0;
+    height: 44px;
     flex:1
     
 }
@@ -468,6 +464,7 @@ body, html {
     flex: 1;
     text-align: right;
     display: inline-block;
+    line-height: 100%;
 }
 
 .m-footer {
