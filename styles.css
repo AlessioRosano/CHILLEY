@@ -146,23 +146,15 @@ body, html {
 /* Slider Styling */
 .slider {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: wrap; /* Ermöglicht Zeilenumbruch bei Bedarf */
+    gap: 20px; /* Abstand zwischen den Boxen */
     justify-content: center;
-}
-
-/* Anpassung für Mobilgeräte */
-@media (max-width: 600px) {
-    .slider {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 /* News Box Styling */
 .m-news {
-    flex: 1 1 auto; /* Automatische Breite */
-    max-width: 300px;
+    flex: 1 1 calc(33.33% - 20px); /* Drei Boxen nebeneinander, mit Abstand */
+    max-width: calc(33.33% - 20px); /* Maximale Breite der Box */
     background-color: #f4f4f4;
     border-radius: 8px;
     padding: 15px;
@@ -195,7 +187,6 @@ body, html {
     cursor: pointer;
     text-transform: uppercase;
     font-size: 0.9em;
-    text-align: center;
 }
 
 .click-here:hover {
@@ -220,24 +211,35 @@ body, html {
     color: #333;
 }
 
-/* Mobiles Styling für Zitat */
-@media (max-width: 600px) {
-    .m-zitat {
-        font-size: 1.2em;
-        padding: 10px;
+/* Mobile-Optimierung */
+@media (max-width: 768px) { /* Für kleinere Geräte */
+    .slider {
+        flex-direction: column; /* Boxen untereinander anordnen */
+        gap: 20px; /* Größerer Abstand zwischen den Boxen */
     }
-}
 
-/* Responsive Design */
-@media (min-width: 600px) {
     .m-news {
-        flex: 1 1 calc(50% - 40px); /* Halb-Breite für Tablets und größere Geräte */
+        max-width: 100%; /* Jede Box nimmt die gesamte Breite ein */
+    }
+
+    .m-zitat {
+        padding: 20px; /* Mehr Platz um das Zitat */
     }
 }
 
+/* Optimierung für größere Tablets (ab 768px) */
+@media (min-width: 768px) {
+    .m-news {
+        flex: 1 1 calc(50% - 20px); /* Zwei Boxen nebeneinander */
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Optimierung für große Bildschirme (ab 1024px) */
 @media (min-width: 1024px) {
     .m-news {
-        flex: 1 1 calc(33.33% - 40px); /* Drittel-Breite für größere Bildschirme */
+        flex: 1 1 calc(33.33% - 20px); /* Drei Boxen nebeneinander */
+        max-width: calc(33.33% - 20px);
     }
 }
 
