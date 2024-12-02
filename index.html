@@ -1,15 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+
+  	<link rel="stylesheet" type="text/css" href="styles.css" />
+  	
+  	
 </head>
 <body>
-    senf von elena
-    senf von jelena
-    <div>Guguck</div>
-    <div>Es Schniiit</div>
-
-</body>
+  	
+  	<div class="m-home">
+    		<div class="d-header">
+      			<img class="image-7-icon" alt="" src="image 7.png">
+      			
+      			<div class="menu-toggle" id="menuToggleContainer">
+        				<div class="menu-toggle-child">
+        				</div>
+        				<div class="menu-toggle-child">
+        				</div>
+        				<div class="menu-toggle-child">
+        				</div>
+      			</div>
+    		</div>
+    		<div class="slider">
+      			<div class="m-news">
+        				<img class="bild-icon" alt="" src="Bild.png">
+        				
+        				<b class="text">So geht Erholung</b>
+        				<div class="button" id="buttonContainer">
+          					<div class="click-here">Erfahre mehr</div>
+        				</div>
+      			</div>
+      			<div class="m-news1">
+        				<img class="bild-icon" alt="" src="Bild.png">
+        				
+        				<b class="text">ChillEY?</b>
+        				<div class="button1">
+          					<div class="click-here">Erfahre mehr</div>
+        				</div>
+      			</div>
+      			<div class="m-news2">
+        				<img class="bild-icon" alt="" src="Bild.png">
+        				
+        				<b class="text">ChillEY?</b>
+        				<div class="button1">
+          					<div class="click-here">Erfahre mehr</div>
+        				</div>
+      			</div>
+    		</div>
+    		<div class="m-news3">
+      			<img class="bild-icon" alt="" src="Bild.png">
+      			
+      			<b class="text">CHILLEY?</b>
+      			<div class="button" id="buttonContainer">
+        				<div class="click-here">Erfahre mehr</div>
+      			</div>
+    		</div>
+    		<div class="m-news3">
+      			<img class="bild-icon" alt="" src="Bild.png">
+      			
+      			<b class="text">Unsere Partner</b>
+      			<div class="button" id="buttonContainer">
+        				<div class="click-here">Erfahre mehr</div>
+      			</div>
+    		</div>
+    		<div class="m-zitat">
+      			<div class="irgend-ein-schnes">“Irgend ein schönes Zitat oder Sprüchli oder was au immer”</div>
+      			<div class="die-grnder-von">Die Gründer von ChillEY</div>
+    		</div>
+    		<div class="m-news3">
+      			<img class="bild-icon" alt="" src="Bild.png">
+      			
+      			<b class="text">Wer wir sind</b>
+      			<div class="button" id="buttonContainer">
+        				<div class="click-here">Erfahre mehr</div>
+      			</div>
+    		</div>
+    		<div class="m-footer">
+      			<div class="chilley-musterplatz-3-12345-mu-container">
+        				<p class="chilley-musterplatz-3-12345-mu">ChillEYMusterplatz 312345 Musterstadt</p>
+        				<p class="chilley-musterplatz-3-12345-mu">Musterland</p>
+        				<p class="chilley-musterplatz-3-12345-mu">mustermail@chilley.com</p>
+        				<p class="chilley-musterplatz-3-12345-mu">+41 79 123 45 67</p>
+      			</div>
+      			<div class="impressum-datenschutz">
+        				<p class="impressum">Impressum  </p>
+        				<p class="chilley-musterplatz-3-12345-mu">Datenschutz</p>
+      			</div>
+    		</div>
+  	</div>
+  	
+  	<div id="mNavContainer" class="popup-overlay" style="display:none">
+    		
+    		<div class="m-nav">
+      			<div class="menu-toggle1">
+        				<div class="rectangle-div">
+        				</div>
+        				<div class="menu-toggle-child1">
+        				</div>
+      			</div>
+      			<div class="news-parent">
+        				<div class="news" id="popupnewsText">News</div>
+        				<div class="news" id="popupwhatWeDo">What we do</div>
+        				<div class="news" id="popupwhoWeAre">Who we are</div>
+        				<div class="news" id="popuppartnerText">Partner</div>
+        				<div class="news" id="popupproductsText">Products</div>
+      			</div>
+    		</div>
+    		
+    		
+  	</div>
+  	
+  	
+  	
+  	<script>
+    		var popupnewsText = document.getElementById("popupnewsText");
+    		if(popupnewsText) {
+      			popupnewsText.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var popupwhatWeDo = document.getElementById("popupwhatWeDo");
+    		if(popupwhatWeDo) {
+      			popupwhatWeDo.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var popupwhoWeAre = document.getElementById("popupwhoWeAre");
+    		if(popupwhoWeAre) {
+      			popupwhoWeAre.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var popuppartnerText = document.getElementById("popuppartnerText");
+    		if(popuppartnerText) {
+      			popuppartnerText.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var popupproductsText = document.getElementById("popupproductsText");
+    		if(popupproductsText) {
+      			popupproductsText.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var menuToggleContainer = document.getElementById("menuToggleContainer");
+    		if(menuToggleContainer) {
+      			menuToggleContainer.addEventListener("click", function () {
+        				var popup = document.getElementById("mNavContainer");
+        				if(!popup) return;
+        				var popupStyle = popup.style;
+        				if(popupStyle) {
+          					popupStyle.display = "flex";
+          					popupStyle.zIndex = 100;
+          					popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+          					popupStyle.alignItems = "center";
+          					popupStyle.justifyContent = "center";
+        				}
+        				popup.setAttribute("closable", "");
+        				
+        				var onClick = popup.onClick || function(e) {
+          					if(e.target === popup && popup.hasAttribute("closable")) {
+            						popupStyle.display = "none";
+          					}
+        				};
+        				popup.addEventListener("click", onClick);
+      			});
+    		}
+    		
+    		var buttonContainer = document.getElementById("buttonContainer");
+    		if(buttonContainer) {
+      			buttonContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}</script></body>
 </html>
