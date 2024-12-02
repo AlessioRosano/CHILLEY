@@ -152,20 +152,19 @@ body, html {
 /* Slider Styling */
 .slider {
     display: flex;
-    flex-wrap: wrap; /* Ermöglicht Zeilenumbruch bei Bedarf */
-    gap: 20px; /* Abstand zwischen den Boxen */
-    justify-content: center;
+    flex-direction: column;
 }
 
 /* News Box Styling */
 .m-news {
-    flex: 1 1 calc(33.33% - 20px); /* Drei Boxen nebeneinander, mit Abstand */
-    max-width: calc(33.33% - 20px); /* Maximale Breite der Box */
+    display: block;
     background-color: #f4f4f4;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .m-news img {
@@ -174,29 +173,17 @@ body, html {
     border-radius: 8px;
 }
 
-.text {
+.m-news h2 {
     font-weight: bold;
     margin: 10px 0;
     font-size: 1.2em;
+    text-decoration: none;
+    color: black;
 }
 
-/* Button Styling */
-.button {
-    margin-top: 10px;
-}
-
-.click-here {
-    padding: 10px 20px;
-    background-color: #007bff;
+.m-news .button a {
+    text-decoration: none;
     color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 0.9em;
-}
-
-.click-here:hover {
-    background-color: #0056b3;
 }
 
 /* Zitat Styling */
@@ -224,28 +211,8 @@ body, html {
         gap: 20px; /* Größerer Abstand zwischen den Boxen */
     }
 
-    .m-news {
-        max-width: 100%; /* Jede Box nimmt die gesamte Breite ein */
-    }
-
     .m-zitat {
         padding: 20px; /* Mehr Platz um das Zitat */
-    }
-}
-
-/* Optimierung für größere Tablets (ab 768px) */
-@media (min-width: 768px) {
-    .m-news {
-        flex: 1 1 calc(50% - 20px); /* Zwei Boxen nebeneinander */
-        max-width: calc(50% - 20px);
-    }
-}
-
-/* Optimierung für große Bildschirme (ab 1024px) */
-@media (min-width: 1024px) {
-    .m-news {
-        flex: 1 1 calc(33.33% - 20px); /* Drei Boxen nebeneinander */
-        max-width: calc(33.33% - 20px);
     }
 }
 
@@ -302,24 +269,6 @@ body, html {
     color: #fff;
 }
 
-.m-news {
-    position: absolute;
-    top: 1px;
-    left: 40px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 32px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    background-color: #fff;
-    width: 313px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 20px;
-    min-width: 313px;
-    max-width: 313px;
-}
 
 .button1 {
     border-radius: 50px;
@@ -337,67 +286,6 @@ body, html {
     color: #fff;
 }
 
-.m-news1 {
-    position: absolute;
-    top: 0px;
-    left: 377px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 32px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    background-color: #fff;
-    width: 313px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 20px;
-    min-width: 313px;
-    max-width: 313px;
-}
-
-.m-news2 {
-    position: absolute;
-    top: 0px;
-    left: 725px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 32px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    background-color: #fff;
-    width: 313px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 20px;
-    min-width: 313px;
-    max-width: 313px;
-}
-
-.slider {
-    align-self: stretch;
-    position: relative;
-    height: 351px;
-    overflow-x: auto;
-    flex-shrink: 0;
-}
-
-.m-news3 {
-    width: 313px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 32px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 20px;
-    min-width: 313px;
-    max-width: 313px;
-}
 
 .irgend-ein-schnes {
     align-self: stretch;
@@ -439,32 +327,37 @@ body, html {
 }
 
 .chilley-musterplatz-3-12345-mu-container {
-    width: 158px;
+    width: 164px;
     position: relative;
-    letter-spacing: -0.05em;
+    text-align:center;
     line-height: 100%;
     display: inline-block;
-    height: 94px;
-    flex-shrink: 0;
+    height: 80px;
     flex:1
+    
 }
 
 .impressum {
     margin: 0;
-    white-space: pre-wrap;
 }
 
 .impressum-datenschutz {
     width: 164px;
     position: relative;
-    letter-spacing: -0.05em;
     line-height: 100%;
     text-align: left;
     display: inline-block;
-    height: 34px;
-    flex-shrink: 0;
+    height: 44px;
     flex:1
     
+}
+
+.socials {
+    position: relative;
+    flex: 1;
+    text-align: right;
+    display: inline-block;
+    line-height: 100%;
 }
 
 .m-footer {
