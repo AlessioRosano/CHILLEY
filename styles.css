@@ -1,3 +1,20 @@
+/* ----------Header----------- */
+
+
+
+.m-header {
+    align-self: stretch;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e1e0de;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
 .image-7-icon {
     width: 140px;
     position: relative;
@@ -21,18 +38,22 @@
     justify-content: center;
     gap: 8px;
 }
-.d-header {
-    align-self: stretch;
-    border-radius: 0px 0px 20px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #e1e0de;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
+
+/* ----------Header----------- */
+
+/* ----------Body----------- */
+
+/* ----------Body----------- */
+
+/* ----------Footer----------- */
+
+/* ----------Footer----------- */
+
+
+
+
+
+
 .bild-icon {
     align-self: stretch;
     position: relative;
@@ -204,6 +225,7 @@
     display: inline-block;
     height: 94px;
     flex-shrink: 0;
+    flex:1
 }
 .impressum {
     margin: 0;
@@ -218,6 +240,7 @@
     display: inline-block;
     height: 34px;
     flex-shrink: 0;
+    
 }
 .m-footer {
     align-self: stretch;
@@ -227,7 +250,7 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     padding: 40px;
     box-sizing: border-box;
