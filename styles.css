@@ -163,6 +163,13 @@ body, html {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Diese Regel sorgt dafür, dass auf Handys (kleinen Geräten) alle Boxen untereinander angezeigt werden */
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column; /* Boxen untereinander anzeigen */
+        gap: 20px; /* Größerer Abstand zwischen den Boxen */
+    }
+    
 .m-news img {
     max-width: 100%;
     height: auto;
