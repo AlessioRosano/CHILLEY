@@ -1,43 +1,133 @@
+/* ----------Allgemeines----------- */
+
+/* Globale Schriftart für die gesamte Seite */
+body {
+    font-family: 'Aileron', sans-serif; /* Globale Schriftart */
+    font-size: 16px; /* Standard-Schriftgrösse */
+    color: #333; /* Standard-Schriftfarbe */
+    line-height: 1.6; /* Standard-Zeilenhöhe */
+    margin: 0;
+    padding: 0;
+}
+
+/* Überschriften-Stile */
+h1 {
+    font-size: 40px; /* Spezifische Grösse für h1 */
+    font-weight: bold; /* Fett für h1 */
+    margin: 20px 0; /* Oben und unten Abstand */
+}
+
+h2 {
+    font-size: 32px; /* Spezifische Grösse für h2 */
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 14px 0;
+}
+
+h5, {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 12px 0;
+}
+
+/* Weitere Stile für Text */
+p {
+    margin: 10px 0;
+    font-size: 16px; /* Standard-Schriftgrösse für Absätze */
+}
+
+/* ----------Allgemeines----------- */
+
+
+
+
+
+
+
 /* ----------Header----------- */
 
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
 
-
-.m-header {
-    align-self: stretch;
-    border-radius: 0px 0px 20px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #e1e0de;
-    overflow: hidden;
+.navbar {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    align-items: center;
 }
 
-.image-7-icon {
-    width: 140px;
-    position: relative;
-    height: 30px;
-    object-fit: cover;
-}
-.menu-toggle-child {
-    width: 24px;
-    position: relative;
-    background-color: #fff;
-    height: 2px;
-}
-.menu-toggle {
-    width: 40px;
-    border-radius: 4px;
-    background-color: #5c7756;
-    height: 40px;
+.nav-links {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Burger-Menü */
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Ansicht */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+        border: 1px solid #444;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
 
 /* ----------Header----------- */
 
@@ -64,17 +154,20 @@
     flex-shrink: 0;
     object-fit: cover;
 }
+
 .text {
     align-self: stretch;
     position: relative;
     letter-spacing: -0.05em;
     line-height: 100%;
 }
+
 .click-here {
     position: relative;
     letter-spacing: -0.05em;
     line-height: 100%;
 }
+
 .button {
     border-radius: 50px;
     background-color: #5c7756;
@@ -91,6 +184,7 @@
     font-size: 16px;
     color: #fff;
 }
+
 .m-news {
     position: absolute;
     top: 1px;
@@ -109,6 +203,7 @@
     min-width: 313px;
     max-width: 313px;
 }
+
 .button1 {
     border-radius: 50px;
     background-color: #5c7756;
@@ -124,6 +219,7 @@
     font-size: 16px;
     color: #fff;
 }
+
 .m-news1 {
     position: absolute;
     top: 0px;
@@ -142,6 +238,7 @@
     min-width: 313px;
     max-width: 313px;
 }
+
 .m-news2 {
     position: absolute;
     top: 0px;
@@ -160,6 +257,7 @@
     min-width: 313px;
     max-width: 313px;
 }
+
 .slider {
     align-self: stretch;
     position: relative;
@@ -167,6 +265,7 @@
     overflow-x: auto;
     flex-shrink: 0;
 }
+
 .m-news3 {
     width: 313px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 32px rgba(0, 0, 0, 0.12);
@@ -182,6 +281,7 @@
     min-width: 313px;
     max-width: 313px;
 }
+
 .irgend-ein-schnes {
     align-self: stretch;
     position: relative;
@@ -189,6 +289,7 @@
     line-height: 100%;
     font-weight: 600;
 }
+
 .die-grnder-von {
     align-self: stretch;
     position: relative;
@@ -199,6 +300,7 @@
     height: 16px;
     flex-shrink: 0;
 }
+
 .m-zitat {
     width: 398px;
     height: 136px;
@@ -214,9 +316,11 @@
     font-size: 24px;
     color: #fff;
 }
+
 .chilley-musterplatz-3-12345-mu {
     margin: 0;
 }
+
 .chilley-musterplatz-3-12345-mu-container {
     width: 158px;
     position: relative;
@@ -226,10 +330,12 @@
     height: 94px;
     flex-shrink: 0;
 }
+
 .impressum {
     margin: 0;
     white-space: pre-wrap;
 }
+
 .impressum-datenschutz {
     width: 164px;
     position: relative;
@@ -240,6 +346,7 @@
     height: 34px;
     flex-shrink: 0;
 }
+
 .m-footer {
     align-self: stretch;
     background-color: #fff;
@@ -255,6 +362,7 @@
     text-align: left;
     font-size: 16px;
 }
+
 .m-home {
     width: 100%;
     position: relative;
@@ -272,7 +380,7 @@
 }
 
 
-.rectangle-div {
+/* .rectangle-div {
     width: 24px;
     position: relative;
     background-color: #fff;
@@ -331,4 +439,4 @@
     color: #5c7756;
     font-family: Aileron;
 }
-
+ */
