@@ -42,7 +42,6 @@ h5 {
     margin: 12px 0;
 }
 
-/* Weitere Stile für Text */
 p {
     margin: 10px 0;
     font-size: 16px; /* Standard-Schriftgrösse für Absätze */
@@ -89,7 +88,9 @@ header {
 }
 
 .nav-links a:hover {
-    background-color: #555;
+    
+    color: white;
+    background-color: #5c7756;
     border-radius: 4px;
 }
 
@@ -103,25 +104,29 @@ header {
     cursor: pointer;
 }
 
-/* Mobile Ansicht */
+/* Mobile Ansicht Burger*/
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
         display: none;
-        background-color: #333;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 200px;
-        border: 1px solid #444;
+        background-color: white; /* Hintergrundfarbe des Overlays */
+        position: fixed; /* Ändere Position zu 'fixed', um das gesamte Gerät abzudecken */
+        top: 0;
+        left: 0;
+        width: 100%; /* Nimmt die gesamte Breite ein */
+        height: 100%; /* Nimmt die gesamte Höhe ein */
+        justify-content: center; /* Zentriere die Menüpunkte vertikal */
+        align-items: center; /* Zentriere die Menüpunkte horizontal */
+        z-index: 1;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 15px 0; /* Mehr Abstand zwischen den Menüpunkten */
     }
 
     .burger-menu {
         display: block;
+        z-index: 2; /* Stelle sicher, dass der Button sichtbar bleibt */
     }
 
     .nav-links.show {
