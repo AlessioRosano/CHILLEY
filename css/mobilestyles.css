@@ -94,7 +94,19 @@ body, html {
 }
 
 .m-home {
-    padding: 20px;
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+    font-family: Aileron;
 }
 
 /* Slider Styling */
@@ -322,19 +334,4 @@ body, html {
     box-sizing: border-box;
     text-align: left;
     font-size: 16px;
-}
-
-.m-home {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    text-align: center;
-    font-size: 32px;
-    color: #000;
-    font-family: Aileron;
 }
