@@ -233,11 +233,6 @@ body, html {
 
 /* ----------Footer----------- */
 
-
-
-
-
-
 .bild-icon {
     align-self: stretch;
     position: relative;
@@ -278,7 +273,6 @@ body, html {
     font-size: 16px;
     color: #fff;
 }
-
 
 .button1 {
     border-radius: 50px;
@@ -332,18 +326,3 @@ body, html {
     color: #fff;
 }
 
-
-.m-home {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    text-align: center;
-    font-size: 32px;
-    color: #000;
-    font-family: Aileron;
-}
