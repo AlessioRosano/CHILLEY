@@ -267,10 +267,11 @@
     position: relative;
     letter-spacing: -0.05em;
     line-height: 100%;
-    text-align: right;
+    text-align: left;
     display: inline-block;
     height: 34px;
     flex-shrink: 0;
+    flex:1
     
 }
 .m-footer {
