@@ -204,6 +204,7 @@
     display: inline-block;
     height: 94px;
     flex-shrink: 0;
+    flex:1
 }
 .impressum {
     margin: 0;
@@ -218,6 +219,7 @@
     display: inline-block;
     height: 34px;
     flex-shrink: 0;
+    
 }
 .m-footer {
     align-self: stretch;
@@ -227,7 +229,7 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     padding: 40px;
     box-sizing: border-box;
