@@ -151,9 +151,17 @@ body, html {
     justify-content: center;
 }
 
+/* Anpassung für Mobilgeräte */
+@media (max-width: 600px) {
+    .slider {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* News Box Styling */
 .m-news {
-    flex: 1 1 calc(100% - 40px); /* Default: full width */
+    flex: 1 1 auto; /* Automatische Breite */
     max-width: 300px;
     background-color: #f4f4f4;
     border-radius: 8px;
@@ -175,7 +183,7 @@ body, html {
 }
 
 /* Button Styling */
-.button, .button1 {
+.button {
     margin-top: 10px;
 }
 
@@ -187,6 +195,7 @@ body, html {
     cursor: pointer;
     text-transform: uppercase;
     font-size: 0.9em;
+    text-align: center;
 }
 
 .click-here:hover {
@@ -211,16 +220,24 @@ body, html {
     color: #333;
 }
 
+/* Mobiles Styling für Zitat */
+@media (max-width: 600px) {
+    .m-zitat {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
+
 /* Responsive Design */
 @media (min-width: 600px) {
     .m-news {
-        flex: 1 1 calc(50% - 40px); /* Half width for tablets and up */
+        flex: 1 1 calc(50% - 40px); /* Halb-Breite für Tablets und größere Geräte */
     }
 }
 
 @media (min-width: 1024px) {
     .m-news {
-        flex: 1 1 calc(33.33% - 40px); /* Third width for larger screens */
+        flex: 1 1 calc(33.33% - 40px); /* Drittel-Breite für größere Bildschirme */
     }
 }
 
