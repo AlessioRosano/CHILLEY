@@ -8,6 +8,7 @@ body {
     line-height: 1.6; /* Standard-Zeilenhöhe */
     margin: 0;
     padding: 0;
+    background-color: #5c7756;
 }
 
 /* Überschriften-Stile */
@@ -35,7 +36,7 @@ h4 {
     margin: 14px 0;
 }
 
-h5, {
+h5 {
     font-size: 12px;
     font-weight: normal;
     margin: 12px 0;
@@ -58,9 +59,9 @@ p {
 /* ----------Header----------- */
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    background-color: white;
+    color: #5c7756;
+    padding: 20px 40px;
 }
 
 .navbar {
@@ -82,7 +83,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #5c7756;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
 }
@@ -98,7 +99,7 @@ header {
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
+    color: #5c7756;
     cursor: pointer;
 }
 
@@ -399,7 +400,6 @@ header {
 .m-home {
     width: 100%;
     position: relative;
-    background-color: #5c7756;
     overflow: hidden;
     display: flex;
     flex-direction: column;
