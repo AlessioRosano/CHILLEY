@@ -85,39 +85,48 @@ header {
 /* ----------Body----------- */
 
 .m-home {
-    flex: 1;
-    min-height: 100vh;
+    display: grid; /* Verwende ein Grid-System */
+    grid-template-columns: 1fr; /* Standardmäßig eine Spalte */
+    gap: 20px; /* Abstand zwischen den Grid-Elementen */
+    padding: 20px;
+    justify-items: center; /* Zentriere die Items horizontal */
+    align-items: start; /* Zentriere die Items vertikal */
     width: 90vw;
     margin: auto;
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    text-align: center;
-    font-size: 32px;
-    color: #000;
-   
 }
 
+/* Responsive Grid-Anpassung für Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten auf Tablets */
+        gap: 30px;
+    }
+}
+
+/* Responsive Grid-Anpassung für Desktop */
+@media (min-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(3, 1fr); /* Drei Spalten auf Desktops */
+        gap: 40px;
+    }
+}
 
 /* News Box Styling */
 .m-news {
-    display: block;
     background-color: #f4f4f4;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    margin-bottom: 20px;
+    width: 100%; /* Volle Breite innerhalb des Grids */
+    max-width: 400px; /* Begrenze die Breite */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .m-news img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
@@ -126,20 +135,32 @@ header {
     font-weight: bold;
     margin: 10px 0;
     font-size: 1.2em;
-    text-decoration: none;
     color: black;
 }
+
 .m-news p {
-    margin-left: 3%;
-    margin-right: 3%;
-    text-align:justify;
-    text-decoration: none;
+    margin: 0 10px;
+    text-align: justify;
     color: black;
+}
+
+.m-news .button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .m-news .button a {
     text-decoration: none;
     color: white;
+    background-color: #5c7756;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.m-news .button a:hover {
+    background-color: #497044;
 }
 
 /* Zitat Styling */
@@ -148,29 +169,8 @@ header {
     text-align: center;
     font-style: italic;
     color: white;
+    font-size: 1.2em;
 }
-
-
-.button {
-    border-radius: 50px;
-    margin-left: 110px;
-    margin-right: 110px;
-    background-color: #5c7756;
-    height: 40px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 24px;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-size: 16px;
-    color: #fff;
-}
-
-/* ----------Body----------- */
 
 /* ----------Footer----------- */
 
@@ -202,9 +202,6 @@ header {
     flex-direction: column; /* Ordnet die Icons vertikal an */
     align-items: flex-end; /* Richtet die Icons am rechten Rand aus */
     gap: 10px; /* Abstand zwischen den Icons */
-    text-align: right; /* Textausrichtung bleibt rechts */
 }
 
 /* ----------Footer----------- */
-
-
