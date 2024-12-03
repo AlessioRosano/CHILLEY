@@ -96,7 +96,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 20px;
     text-align: center;
     font-size: 32px;
     color: #000;
