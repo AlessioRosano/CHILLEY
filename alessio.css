@@ -1,31 +1,3 @@
-/* ----------Allgemeines----------- */
-
-body {
-    font-family: "Signika", sans-serif;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #5c7756;
-}
-
-h1, h2, h3, h4, h5 {
-    margin: 0;
-    font-weight: normal;
-}
-
-h1 { font-size: 40px; }
-h2 { font-size: 32px; }
-h3 { font-size: 24px; }
-h4 { font-size: 20px; }
-h5 { font-size: 12px; }
-
-p {
-    margin: 10px 0;
-    font-size: 16px;
-}
-
 /* ----------Header----------- */
 
 header {
@@ -115,23 +87,12 @@ header {
     display: grid;
     grid-template-columns: 1fr; /* Standard: eine Spalte */
     gap: 20px;
-    padding: 20px;
+   width: 90vw;
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
     justify-items: center;
     align-items: start;
-}
-
-/* Tablet Ansicht (768px bis 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .m-home {
-        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
-    }
-}
-
-/* Desktop Ansicht (ab 1024px) */
-@media (min-width: 1024px) {
-    .m-home {
-        grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
-    }
 }
 
 /* News Box Styling */
@@ -142,7 +103,10 @@ header {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Maximale Breite für große Kacheln */
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .m-news img {
@@ -154,21 +118,53 @@ header {
 .m-news h2 {
     font-weight: bold;
     margin: 10px 0;
-    font-size: 1.2em;
+   
     color: black;
 }
 
 .m-news p {
-    margin: 0 10px;
+    margin: 0 3%;
     text-align: justify;
     color: black;
+}
+
+.m-news .button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .m-news .button a {
     text-decoration: none;
     color: white;
+    background-color: #5c7756;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
 
+.m-news .button a:hover {
+    background-color: #497044;
+}
+
+.button {
+    border-radius: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
+    background-color: #5c7756;
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
 /* Zitat Styling */
 .m-zitat {
     margin: 20px 0;
@@ -176,6 +172,55 @@ header {
     font-style: italic;
     color: white;
     font-size: 1.2em;
+}
+
+/* ----------Responsive Styles----------- */
+
+/* Tablet Ansicht (768px bis 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+        gap: 30px;
+    }
+
+    .m-news {
+        width: 100%; /* Breite passt sich an */
+        max-width: none;
+    }
+
+    .m-news h2 {
+        font-size: 1.5em;
+    }
+
+    .m-news p {
+        font-size: 1em;
+    }
+}
+
+/* Desktop Ansicht (ab 1024px) */
+@media (min-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
+        gap: 30px;
+    }
+
+    .m-news {
+        width: 100%;
+        max-width: none;
+    }
+
+    .m-news h2 {
+        font-size: 1.8em;
+    }
+
+    .m-news p {
+        font-size: 1.1em;
+    }
+
+    .m-news .button a {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
 }
 
 /* ----------Footer----------- */
