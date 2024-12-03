@@ -1,0 +1,257 @@
+/* ----------Header----------- */
+
+header {
+    background-color: white;
+    color: #5c7756;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5c7756;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+    background-color: #5c7756;
+    border-radius: 4px;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #5c7756;
+    cursor: pointer;
+}
+
+/* Mobile Ansicht Burger */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .burger-menu {
+        display: block;
+        z-index: 100;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+/* ----------Header----------- */
+
+/* ----------Body----------- */
+
+.m-home {
+    display: grid;
+    grid-template-columns: 1fr; /* Standard: eine Spalte */
+    gap: 20px;
+   width: 90vw;
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+/* News Box Styling */
+.m-news {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.m-news img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.m-news h2 {
+    font-weight: bold;
+    margin: 10px 0;
+   
+    color: black;
+}
+
+.m-news p {
+    margin: 0 3%;
+    text-align: justify;
+    color: black;
+}
+
+.m-news .button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.m-news .button a {
+    text-decoration: none;
+    color: white;
+    background-color: #5c7756;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.m-news .button a:hover {
+    background-color: #497044;
+}
+
+.button {
+    border-radius: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
+    background-color: #5c7756;
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+/* Zitat Styling */
+.m-zitat {
+    margin: 20px 0;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* ----------Responsive Styles----------- */
+
+/* Tablet Ansicht (768px bis 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+        gap: 30px;
+    }
+
+    .m-news {
+        width: 100%; /* Breite passt sich an */
+        max-width: none;
+    }
+
+    .m-news h2 {
+        font-size: 1.5em;
+    }
+
+    .m-news p {
+        font-size: 1em;
+    }
+}
+
+/* Desktop Ansicht (ab 1024px) */
+@media (min-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
+        gap: 30px;
+    }
+
+    .m-news {
+        width: 100%;
+        max-width: none;
+    }
+
+    .m-news h2 {
+        font-size: 1.8em;
+    }
+
+    .m-news p {
+        font-size: 1.1em;
+    }
+
+    .m-news .button a {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+/* ----------Footer----------- */
+
+.m-footer {
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.impressum-container {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.Adresse-container {
+    text-align: center;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+/* ----------Footer----------- */
