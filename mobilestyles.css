@@ -153,6 +153,8 @@ header {
 
 .button {
     border-radius: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
     background-color: #5c7756;
     height: 40px;
     overflow: hidden;
