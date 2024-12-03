@@ -1,13 +1,41 @@
+/* ----------Allgemeines----------- */
+
+body {
+    font-family: "Signika", sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #5c7756;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 12px; }
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
 /* ----------Header----------- */
 
 header {
     background-color: white;
     color: #5c7756;
     padding: 20px 40px;
-    position: sticky; /* Sticky Positionierung */
-    top: 0; /* Fixiert den Header oben */
-    z-index: 100; /* Stellt sicher, dass der Header über anderen Elementen liegt */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Schatten für visuelle Trennung */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -40,7 +68,6 @@ header {
     border-radius: 4px;
 }
 
-/* Burger-Menü */
 .burger-menu {
     display: none;
     font-size: 24px;
@@ -56,7 +83,7 @@ header {
         flex-direction: column;
         display: none;
         background-color: white;
-        position: fixed; /* Deckt den gesamten Bildschirm ab */
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -72,7 +99,7 @@ header {
 
     .burger-menu {
         display: block;
-        z-index: 100; /* Sicherstellen, dass der Button über dem Overlay bleibt */
+        z-index: 100;
     }
 
     .nav-links.show {
@@ -85,35 +112,37 @@ header {
 /* ----------Body----------- */
 
 .m-home {
-    flex: 1;
-    min-height: 100vh;
-    width: 90vw;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    text-align: center;
-    font-size: 32px;
-    color: #000;
-   
+    display: grid;
+    grid-template-columns: 1fr; /* Standard: eine Spalte */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: start;
 }
 
+/* Tablet Ansicht (768px bis 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    }
+}
+
+/* Desktop Ansicht (ab 1024px) */
+@media (min-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
+    }
+}
 
 /* News Box Styling */
 .m-news {
-    display: block;
     background-color: #f4f4f4;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px; /* Maximale Breite für große Kacheln */
 }
 
 .m-news img {
@@ -126,14 +155,12 @@ header {
     font-weight: bold;
     margin: 10px 0;
     font-size: 1.2em;
-    text-decoration: none;
     color: black;
 }
+
 .m-news p {
-    margin-left: 3%;
-    margin-right: 3%;
-    text-align:justify;
-    text-decoration: none;
+    margin: 0 10px;
+    text-align: justify;
     color: black;
 }
 
@@ -148,27 +175,8 @@ header {
     text-align: center;
     font-style: italic;
     color: white;
+    font-size: 1.2em;
 }
-
-
-.button {
-    border-radius: 50px;
-    background-color: #5c7756;
-    height: 40px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 24px;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-size: 16px;
-    color: #fff;
-}
-
-/* ----------Body----------- */
 
 /* ----------Footer----------- */
 
@@ -176,33 +184,29 @@ header {
     background-color: #fff;
     padding: 40px;
     display: flex;
-    flex-direction: row; /* Elemente in einer Zeile anordnen */
-    align-items: center; /* Vertikal zentrieren */
-    justify-content: space-between; /* Elemente horizontal verteilen */
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
-    flex-wrap: wrap; /* Zeilenumbruch bei kleinen Bildschirmen ermöglichen */
-    gap: 20px; /* Optional: Abstand zwischen den Blöcken */
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .impressum-container {
-    text-align: left; /* Text links ausrichten */
+    text-align: left;
     line-height: 1.5;
 }
 
 .Adresse-container {
-    text-align: center; /* Text mittig ausrichten */
+    text-align: center;
     line-height: 1.5;
-    flex: 1; /* Flexibles Wachstum, um in der Mitte zu stehen */
+    flex: 1;
 }
 
 .socials {
     display: flex;
-    flex-direction: column; /* Ordnet die Icons vertikal an */
-    align-items: flex-end; /* Richtet die Icons am rechten Rand aus */
-    gap: 10px; /* Abstand zwischen den Icons */
-    text-align: right; /* Textausrichtung bleibt rechts */
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
 }
 
 /* ----------Footer----------- */
-
-
