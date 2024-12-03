@@ -174,44 +174,35 @@ header {
 
 /* ----------Footer----------- */
 
-.Adresse {
-    margin: 0;
-}
-
-.Adresse-container {
-    width: 164px;
-    text-align: center;
-    line-height: 1.5;
-}
-
-.impressum {
-    margin: 0;
-}
-
-.impressum-container {
-    width: 164px;
-    text-align: left;
-    line-height: 1.5;
-}
-
-.socials {
-    text-align: right;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
 .m-footer {
     background-color: #fff;
     padding: 40px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    text-align: left;
+    flex-direction: row; /* Elemente in einer Zeile anordnen */
+    align-items: center; /* Vertikal zentrieren */
+    justify-content: space-between; /* Elemente horizontal verteilen */
     font-size: 16px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Zeilenumbruch bei kleinen Bildschirmen ermöglichen */
+    gap: 20px; /* Optional: Abstand zwischen den Blöcken */
+}
+
+.impressum-container {
+    text-align: left; /* Text links ausrichten */
+    line-height: 1.5;
+}
+
+.Adresse-container {
+    text-align: center; /* Text mittig ausrichten */
+    line-height: 1.5;
+    flex: 1; /* Flexibles Wachstum, um in der Mitte zu stehen */
+}
+
+.socials {
+    display: flex;
+    flex-direction: column; /* Ordnet die Icons vertikal an */
+    align-items: flex-end; /* Richtet die Icons am rechten Rand aus */
+    gap: 10px; /* Abstand zwischen den Icons */
+    text-align: right; /* Textausrichtung bleibt rechts */
 }
 
 /* ----------Footer----------- */
