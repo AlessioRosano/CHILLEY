@@ -7,7 +7,7 @@ header {
     position: sticky; /* Sticky Positionierung */
     top: 0; /* Fixiert den Header oben */
     z-index: 100; /* Stellt sicher, dass der Header über anderen Elementen liegt */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Schatten für visuelle Trennung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schatten für visuelle Trennung */
 }
 
 .navbar {
@@ -24,7 +24,7 @@ header {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .nav-links a {
@@ -37,7 +37,7 @@ header {
 .nav-links a:hover {
     color: white;
     background-color: #5c7756;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 /* Burger-Menü */
@@ -85,30 +85,14 @@ header {
 /* ----------Body----------- */
 
 .m-home {
-    display: grid; /* Verwende ein Grid-System */
-    grid-template-columns: 1fr; /* Standardmäßig eine Spalte */
+    display: grid; 
+    grid-template-columns: 1fr;
     gap: 20px; /* Abstand zwischen den Grid-Elementen */
     padding: 20px;
     justify-items: center; /* Zentriere die Items horizontal */
     align-items: start; /* Zentriere die Items vertikal */
-    width: 90vw;
+    width: 85vw;
     margin: auto;
-}
-
-/* Responsive Grid-Anpassung für Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .m-home {
-        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten auf Tablets */
-        gap: 30px;
-    }
-}
-
-/* Responsive Grid-Anpassung für Desktop */
-@media (min-width: 1024px) {
-    .m-home {
-        grid-template-columns: repeat(3, 1fr); /* Drei Spalten auf Desktops */
-        gap: 40px;
-    }
 }
 
 /* News Box Styling */
@@ -134,7 +118,6 @@ header {
 .m-news h2 {
     font-weight: bold;
     margin: 10px 0;
-    font-size: 1.2em;
     color: black;
 }
 
@@ -160,17 +143,10 @@ header {
 }
 
 .m-news .button a:hover {
-    background-color: #497044;
+    background-color: #060a05;
 }
 
-/* Zitat Styling */
-.m-zitat {
-    margin: 20px 0;
-    text-align: center;
-    font-style: italic;
-    color: white;
-    font-size: 1.2em;
-}
+
 
 /* ----------Footer----------- */
 
