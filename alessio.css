@@ -93,6 +93,7 @@ header {
    margin-bottom: 20px;
     justify-items: center;
     align-items: start;
+    justify-content: flex-start;
 }
 
 /* News Box Styling */
@@ -104,9 +105,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
 }
 
 .m-news img {
@@ -117,21 +116,20 @@ header {
 
 .m-news h2 {
     font-weight: bold;
-    margin: 10px 0;
-   
     color: black;
 }
 
 .m-news p {
     margin: 0 3%;
     text-align: justify;
-    color: black;
+    
 }
 
 .m-news .button {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    
 }
 
 .m-news .button a {
@@ -144,34 +142,18 @@ header {
 }
 
 .m-news .button a:hover {
-    background-color: #497044;
+    background-color: #030502;
 }
 
-.button {
-    border-radius: 50px;
-    margin-left: 110px;
-    margin-right: 110px;
-    background-color: #5c7756;
-    height: 40px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 24px;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-size: 16px;
-    color: #fff;
-}
+
 /* Zitat Styling */
 .m-zitat {
     margin: 20px 0;
     text-align: center;
     font-style: italic;
+    font-weight: bold;
     color: white;
-    font-size: 1.2em;
+    
 }
 
 /* ----------Responsive Styles----------- */
@@ -202,11 +184,12 @@ header {
     .m-home {
         grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
         gap: 30px;
+        justify-content: space-evenly;
     }
 
     .m-news {
-        width: 100%;
-        max-width: none;
+        width: 90c;
+        max-width: 400px;
     }
 
     .m-news h2 {
