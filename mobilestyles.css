@@ -129,6 +129,13 @@ header {
     text-decoration: none;
     color: black;
 }
+.m-news p {
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align:justify;
+    text-decoration: none;
+    color: black;
+}
 
 .m-news .button a {
     text-decoration: none;
@@ -143,17 +150,6 @@ header {
     color: white;
 }
 
-/* Mobile-Optimierung */
-@media (max-width: 768px) {
-    .slider {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .m-zitat {
-        padding: 20px;
-    }
-}
 
 .button {
     border-radius: 50px;
