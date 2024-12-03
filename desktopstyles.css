@@ -1,0 +1,15 @@
+/* Responsive Grid-Anpassung für Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten auf Tablets */
+        gap: 30px;
+    }
+}
+
+/* Responsive Grid-Anpassung für Desktop */
+@media (min-width: 1024px) {
+    .m-home {
+        grid-template-columns: repeat(3, 1fr); /* Drei Spalten auf Desktops */
+        gap: 40px;
+    }
+}
