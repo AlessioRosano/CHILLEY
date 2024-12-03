@@ -1,46 +1,25 @@
 /* ----------Allgemeines----------- */
 
-/* Globale Schriftart für die gesamte Seite */
 body {
-    font-family: 'Aileron', sans-serif; /* Globale Schriftart */
-    font-size: 16px; /* Standard-Schriftgrösse */
-    color: #333; /* Standard-Schriftfarbe */
-    line-height: 1.6; /* Standard-Zeilenhöhe */
+    font-family: 'Aileron', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #5c7756;
 }
 
-/* Überschriften-Stile */
-h1 {
-    font-size: 40px; /* Spezifische Grösse für h1 */
-    font-weight: bold; /* Fett für h1 */
-    margin: 20px 0; /* Oben und unten Abstand */
-}
-
-h2 {
-    font-size: 32px; /* Spezifische Grösse für h2 */
-    font-weight: bold;
-    margin: 18px 0;
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 16px 0;
-}
-
-h4 {
-    font-size: 20px;
+h1, h2, h3, h4, h5 {
+    margin: 0;
     font-weight: normal;
-    margin: 14px 0;
 }
 
-h5 {
-    font-size: 12px;
-    font-weight: normal;
-    margin: 12px 0;
-}
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 12px; }
 
 p {
     margin: 10px 0;

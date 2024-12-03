@@ -4,6 +4,10 @@ header {
     background-color: white;
     color: #5c7756;
     padding: 20px 40px;
+    position: sticky; /* Sticky Positionierung */
+    top: 0; /* Fixiert den Header oben */
+    z-index: 100; /* Stellt sicher, dass der Header über anderen Elementen liegt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Schatten für visuelle Trennung */
 }
 
 .navbar {
@@ -31,7 +35,6 @@ header {
 }
 
 .nav-links a:hover {
-    
     color: white;
     background-color: #5c7756;
     border-radius: 4px;
@@ -47,29 +50,29 @@ header {
     cursor: pointer;
 }
 
-/* Mobile Ansicht Burger*/
+/* Mobile Ansicht Burger */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
         display: none;
-        background-color: white; /* Hintergrundfarbe des Overlays */
-        position: fixed; /* Ändere Position zu 'fixed', um das gesamte Gerät abzudecken */
+        background-color: white;
+        position: fixed; /* Deckt den gesamten Bildschirm ab */
         top: 0;
         left: 0;
-        width: 100%; /* Nimmt die gesamte Breite ein */
-        height: 100%; /* Nimmt die gesamte Höhe ein */
-        justify-content: center; /* Zentriere die Menüpunkte vertikal */
-        align-items: center; /* Zentriere die Menüpunkte horizontal */
-        z-index: 1;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
     }
 
     .nav-links li {
-        margin: 15px 0; /* Mehr Abstand zwischen den Menüpunkten */
+        margin: 15px 0;
     }
 
     .burger-menu {
         display: block;
-        z-index: 2; /* Stelle sicher, dass der Button sichtbar bleibt */
+        z-index: 100; /* Sicherstellen, dass der Button über dem Overlay bleibt */
     }
 
     .nav-links.show {
@@ -77,17 +80,9 @@ header {
     }
 }
 
-
 /* ----------Header----------- */
 
-
-
-
-
-
 /* ----------Body----------- */
-
-
 
 .m-home {
     width: 90vw;
@@ -104,15 +99,8 @@ header {
     font-size: 32px;
     color: #000;
     font-family: Aileron;
-    
 }
 
-
-/* Slider Styling */
-.slider {
-    display: flex;
-    flex-direction: column;
-}
 
 /* News Box Styling */
 .m-news {
@@ -153,22 +141,18 @@ header {
     color: white;
 }
 
-
-
-
-
-
 /* Mobile-Optimierung */
-@media (max-width: 768px) { /* Für kleinere Geräte */
+@media (max-width: 768px) {
     .slider {
-        flex-direction: column; /* Boxen untereinander anordnen */
-        gap: 20px; /* Größerer Abstand zwischen den Boxen */
+        flex-direction: column;
+        gap: 20px;
     }
 
     .m-zitat {
-        padding: 20px; /* Mehr Platz um das Zitat */
+        padding: 20px;
     }
 }
+
 .button {
     border-radius: 50px;
     background-color: #5c7756;
@@ -186,7 +170,6 @@ header {
     color: #fff;
 }
 
-
 /* ----------Body----------- */
 
 /* ----------Footer----------- */
@@ -197,11 +180,8 @@ header {
 
 .Adresse-container {
     width: 164px;
-    position: relative;
-    text-align:center;
-    line-height: 100%;
-    height: 70px;
-    flex:1;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .impressum {
@@ -210,54 +190,28 @@ header {
 
 .impressum-container {
     width: 164px;
-    position: relative;
-    line-height: 100%;
     text-align: left;
-    height: 45px;
-    flex:1;
+    line-height: 1.5;
 }
 
 .socials {
-    flex: 1;
     text-align: right;
-    line-height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .m-footer {
-    align-self: stretch;
     background-color: #fff;
-    height: 174px;
-    overflow: hidden;
-    flex-shrink: 0;
+    padding: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 40px;
-    box-sizing: border-box;
+    justify-content: space-around;
     text-align: left;
     font-size: 16px;
+    flex-wrap: wrap;
 }
 
 /* ----------Footer----------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
