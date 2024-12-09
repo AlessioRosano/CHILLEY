@@ -3,7 +3,11 @@
     .m-home {
         grid-template-columns: repeat(2, 1fr); /* Zwei Spalten auf Tablets */
         gap: 30px;
+        
+
     }
+    .m-home.post{ grid-template-columns: 1fr;
+        width: 50vw;}
 }
 
 /* Responsive Grid-Anpassung für Desktop */
@@ -12,4 +16,9 @@
         grid-template-columns: repeat(3, 1fr); /* Drei Spalten auf Desktops */
         gap: 40px;
     }
+    .m-home.whatwedo{ grid-template-columns: repeat(2, 1fr); width: 60vw;
+        }
+
+    .m-home.post{ grid-template-columns: 1fr;
+    width: 40vw;}
 }

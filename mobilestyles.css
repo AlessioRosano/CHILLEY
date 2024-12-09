@@ -90,9 +90,10 @@ header {
     gap: 20px; /* Abstand zwischen den Grid-Elementen */
     padding: 20px;
     justify-items: center; /* Zentriere die Items horizontal */
-    align-items: start; /* Zentriere die Items vertikal */
+    align-items: stretch; /* Zentriere die Items vertikal */
     width: 85vw;
     margin: auto;
+    height: 100%;
 }
 
 /* News Box Styling */
@@ -102,21 +103,26 @@ header {
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Volle Breite innerhalb des Grids */
-    max-width: 400px; /* Begrenze die Breite */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.imgWrapper{
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .m-news img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .m-news h2 {
-    font-weight: bold;
+    font-weight: medium;
     margin: 10px 0;
     color: black;
 }
@@ -144,6 +150,12 @@ header {
 
 .m-news .button a:hover {
     background-color: #060a05;
+}
+
+.m-zitat{
+    justify-content: center;
+    gap:20px;
+ 
 }
 
 

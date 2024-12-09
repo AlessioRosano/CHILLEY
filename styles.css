@@ -1,4 +1,4 @@
-/* ----------Allgemeines----------- */
+/* ----------Allgemeines Mobile----------- */
 
 body {
     font-family: "Signika", sans-serif;
@@ -27,4 +27,71 @@ p {
 }
 
 
-/* ----------Allgemeines----------- */
+/* ----------Allgemeines Tablet----------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+body {
+    font-family: "Signika", sans-serif;
+    font-size: 16px; 
+    color: #333;
+    line-height: 1.7; 
+    margin: 0;
+    padding: 0;
+    background-color: #5c7756;
+}
+
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1 { font-size: 48px; } 
+h2 { font-size: 38px; }
+h3 { font-size: 32px; }
+h4 { font-size: 24px; }
+h5 { font-size: 14px; }
+
+
+p {
+    margin: 12px 0; 
+    font-size: 16px; 
+}
+
+}
+
+
+/* ----------Allgemeines Desktop----------- */
+
+
+@media (min-width: 1024px) {
+
+body {
+    font-family: "Signika", sans-serif;
+    font-size: 18px; /* Etwas grösser für Web */
+    color: #333;
+    line-height: 1.8; /* Mehr Zeilenhöhe für bessere Lesbarkeit */
+    margin: 0;
+    padding: 0;
+    background-color: #5c7756;
+}
+
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1 { font-size: 56px;  } 
+h2 { font-size: 44px;line-height: 120% }
+h3 { font-size: 36px; }
+h4 { font-size: 28px; }
+h5 { font-size: 16px; }
+
+
+p {
+    margin: 14px 0; 
+    font-size: 18px; 
+}
+}
