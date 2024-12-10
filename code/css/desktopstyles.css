@@ -1,36 +1,43 @@
 /* Responsive Grid-Anpassung für Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .m-home {
-        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten auf Tablets */
-        gap: 30px;
-        
-
-    }
-    .m-home.post{ grid-template-columns: 1fr;
-        width: 50vw;}
+  .m-home {
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten auf Tablets */
+    gap: 30px;
+  }
+  .m-home.post {
+    grid-template-columns: 1fr;
+    width: 50vw;
+  }
 }
 
 /* Responsive Grid-Anpassung für Desktop */
 @media (min-width: 1024px) {
-    .m-home {
-        grid-template-columns: repeat(3, 1fr); /* Drei Spalten auf Desktops */
-        gap: 40px;
-    }
-    .m-home.whatwedo{ grid-template-columns: repeat(2, 1fr); width: 60vw;
-        }
-    .m-home.products{ grid-template-columns: repeat(2, 1fr); width: 60vw;
-        }
-        .m-home.partner{ grid-template-columns: repeat(2, 1fr); width: 60vw;
-        }
+  .m-home {
+    grid-template-columns: repeat(3, 1fr); /* Drei Spalten auf Desktops */
+    gap: 40px;
+  }
+  .m-home.whatwedo {
+    grid-template-columns: repeat(2, 1fr);
+    width: 60vw;
+  }
+  .m-home.products {
+    grid-template-columns: repeat(2, 1fr);
+    width: 60vw;
+  }
+  .m-home.partner {
+    grid-template-columns: repeat(2, 1fr);
+    width: 60vw;
+  }
 
-    .m-home.post{ grid-template-columns: 1fr;
-    width: 40vw;}
+  .m-home.post {
+    grid-template-columns: 1fr;
+    width: 40vw;
+  }
 
-
-    .socials {
-        display: flex;
-        flex-direction: row; /* Ordnet die Icons vertikal an */
-        align-items: flex-end; /* Richtet die Icons am rechten Rand aus */
-        gap: 10px; /* Abstand zwischen den Icons */
-    }
+  .socials {
+    display: flex;
+    flex-direction: row; /* Ordnet die Icons vertikal an */
+    align-items: flex-end; /* Richtet die Icons am rechten Rand aus */
+    gap: 10px; /* Abstand zwischen den Icons */
+  }
 }
