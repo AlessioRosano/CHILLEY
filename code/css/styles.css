@@ -1,79 +1,100 @@
 /* ----------Allgemeines Mobile----------- */
 
 body {
-    font-family: "Signika", sans-serif;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #5c7756;
-    
+  font-family: "Signika", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #5c7756;
 }
 
-h1, h2, h3, h4, h5 {
-    margin: 0;
-    font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: normal;
 }
 
-h1 { font-size: 40px; }
-h2 { font-size: 32px; }
-h3 { font-size: 24px; }
-h4 { font-size: 20px; }
-h5 { font-size: 12px; }
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 12px;
+}
 
 p {
-    margin: 10px 0;
-    font-size: 16px;
+  margin: 10px 0;
+  font-size: 16px;
 }
-
 
 /* ----------Allgemeines Tablet----------- */
 
 @media (min-width: 768px) and (max-width: 1024px) {
- 
-body {
-    line-height: 1.7; 
+  body {
+    line-height: 1.7;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+
+  p {
+    margin: 12px 0;
+  }
 }
-
-
-h1 { font-size: 48px; } 
-h2 { font-size: 38px; }
-h3 { font-size: 32px; }
-h4 { font-size: 24px; }
-h5 { font-size: 14px; }
-
-
-p {
-    margin: 12px 0; 
-}
-
-}
-
 
 /* ----------Allgemeines Desktop----------- */
 
-
 @media (min-width: 1024px) {
-
-body {
-
+  body {
     font-size: 18px; /* Etwas grösser für Web */
     line-height: 1.8; /* Mehr Zeilenhöhe für bessere Lesbarkeit */
-}
+  }
 
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 44px;
+    line-height: 120%;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 16px;
+  }
 
-
-
-h1 { font-size: 56px;  } 
-h2 { font-size: 44px;line-height: 120% }
-h3 { font-size: 36px; }
-h4 { font-size: 28px; }
-h5 { font-size: 16px; }
-
-
-p {
-    margin: 14px 0; 
-    font-size: 18px; 
-}
+  p {
+    margin: 14px 0;
+    font-size: 18px;
+  }
 }
