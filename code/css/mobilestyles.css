@@ -63,7 +63,7 @@ header {
     height: 100%;
     justify-content: center;
     align-items: center;
-    z-index: 99;
+    z-index: 200;
   }
 
   .nav-links li {
@@ -72,7 +72,7 @@ header {
 
   .burger-menu {
     display: block;
-    z-index: 100; /* Sicherstellen, dass der Button über dem Overlay bleibt */
+    z-index: 300; /* Sicherstellen, dass der Button über dem Overlay bleibt */
   }
 
   .nav-links.show {
